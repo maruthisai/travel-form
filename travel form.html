@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Travel Form</title>
+			<link href="style1.css" rel="stylesheet">
+			<script src="1submit.js">
+			
+			</script>
+	</head>
+			<body>
+					<div class="main">
+					<img class="img" src="imge/travel.gif">
+					
+			<h3 class="client">Sec A: Client Info </h3>
+			<hr>
+			<div class="form1">
+			<form method="get" name="form">
+				<table>
+					<tr>
+						<td>Title</td><td><input type="text" id="title" name="title" value=""></td>
+					</tr>
+					<tr>
+						<td>First name</td><td><input type="text" id="first name" name="first name" value=""></td>
+					</tr>
+					<tr>
+						<td>Middle intial</td><td><input type="text" id="Middle" name="intial" value=""></td>
+					</tr>
+					<tr>
+						<td>Last name</td><td><input type="text" id="Last name" name="Last name" value="" ></td>
+					</tr>
+					<tr>
+						<td>Email</td><td><input type="text" id="msg" name="msg" value="" ></td>
+					</tr>
+					<tr>
+						<td>Phone number</td><td><input type="text" id="msg" name="msg" value="" maxlength="10"></td>
+						</tr>
+			</table>
+			</form>	
+			</div>
+			    <h3 class="travel">Sec B: Travel Info</h3>
+			    <hr>
+				<div class="info">
+			    <table>
+					
+					<tr>
+						<td>Airline</td>
+						<td>
+						<select  id="state" name="state">
+								<option>Select Airline</option>
+								<option>American Airlines</option>
+								<option>Southwest Airlines</option>
+								<option>United Airlines</option>
+								<option>Spirit Airlines</option>
+								<option>Delta Airlines</option>
+							</select>	
+						</td>
+						<tr>
+						<td>Destination</td><td><input type="text" id="area" name="area" value="" ></td>
+					    </tr>
+						<tr>
+								<td>Leave date:</td><td><input type="date" id="ldate" name="leave" value=""></td>
+							</tr>
+							<tr>
+								<td>Return date:</td><td><input type="date" id="rdate" name="return" value=""></td>
+							</tr>
+							<tr>
+								<td>Estimated cost:</td><td><input type="text" id="ecost" name="cost" value=""></td>
+							</tr>
+					</tr>
+				</table>
+				</div>
+					    <div class="one">
+							<form method="post" action="" name="form">
+							<table>
+							    <tr><td>Additional Expenses:</td></tr>
+							<tr>
+							<td>Car Rental</td>
+						        <td>
+						            <select  id="Car" name="Rental">
+								    <option>Select Car rental</option>
+								    <option>Enterprise</option>
+								    <option>Budget</option>
+								    <option>Hertz</option>
+								    <option>National</option>
+								    <option>Avis</option>
+							        </select>	
+						        </td>
+							</tr>
+							<tr>
+								<td>Hotel</td><td><input type="text" id="hotel" name="hotel" value=""</td>
+							</tr>
+							<tr>
+								<td>Meals</td><td><input type="text" id="meal" name="meal" value=""</td>
+							</tr>
+							<tr>
+								<td>Total estimate</td><td><input type="text" id="estimate" name="estimate" value="$0.00"></td>
+							</tr>
+							</table>	
+							</form>	
+						</div>
+				<div class="footer">
+				<p>Includes</p>
+				<span>customer visit?   <input type="checkbox" name="visit" value="yes"> Yes
+				<input type="checkbox" name="visit" value="No"> No
+				</span>
+				
+				
+					<div class="two">
+						<p>Payment method used:</p>
+						cash : <input type="radio" value="cash" id="cash" onclick="disp('cash')" name="cash">
+		                credit card : <input type="radio" value="credit card" id="credit card" onclick="disp('credit card')" name="credit card">
+				        check : <input type="radio" value="check" id="check" onclick="disp('check')" name="check">
+						<table id="cashForm" style="display:none;">
+					<tr>
+						<td>Name</td><td><input type="text" id="name" name="name" value=""><span id="error1" style="color:red;font-size:20px;"></span></td>
+					</tr>
+					<tr>
+						<td>Address</td><td><input type="text" id="address" name="address" value=""><span id="error2" style="color:red;font-size:20px;"></span></td>
+					</tr></table>
+					<table id="credit cardForm" style="display:none;">
+					<tr>
+						<td>Visa</td><td><input type="text" id="visa" name="visa" value=""><span id="error1" style="color:red;font-size:20px;"></span></td>
+					</tr>
+					<tr>
+						<td>Mastercard</td><td><input type="text" id="mastercard" name="mastercard" value=""><span id="error2" style="color:red;font-size:20px;"></span></td>
+					</tr>
+					<tr>
+						<td>American Express</td><td><input type="text" id="american express " name="american express" value=""><span id="error2" style="color:red;font-size:20px;"></span></td>
+					</tr>
+					<tr>
+						<td>Discover</td><td><input type="text" id="discover" name="discover" value=""><span id="error2" style="color:red;font-size:20px;"></span></td>
+					</tr></table>
+					<table id="checkForm" style="display:none;">
+					<tr>
+						<td>Bank Name</td><td><input type="text" id="name" name="bank" value=""><span id="error1" style="color:red;font-size:20px;"></span></td>
+					</tr>
+					<tr>
+						<td>Routing Number</td><td><input type="text" id="routing" name="number" value=""><span id="error2" style="color:red;font-size:20px;"></span></td>
+					</tr></table>
+					</div>
+					
+				
+				</div>
+				<br>
+				
+				<div class="footer2">Purpose of travel:</div>
+				<div class="footer3">
+				
+				<textarea id="msg" name="msg" value="" rows="5" cols="85"></textarea>
+				
+				</div>	
+					<tr>
+						<td>
+							<input class="submit" type="submit" value="submit" id="submit" name="submit" onclick="return validate()">
+						</td>
+					</tr>
+					
+					
+				
+			    
+			</div>
+			</body>
+</html>	

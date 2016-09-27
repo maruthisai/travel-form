@@ -1,0 +1,36 @@
+.main{
+	width:800px;height:870px;margin:10px auto;border:2px solid grey;
+}
+.main .img{
+	margin:20px 85px;
+}
+.client{
+	margin-left:5px;
+}
+.form1{
+	margin-left:10px;
+}
+.travel{
+	margin-left:5px;
+}
+.info{
+	margin-left:10px;
+}
+.one{
+	float:right;margin-right:50px;margin-top:-125px;
+}
+.two{
+	float:right;margin-right:125px;margin-top:-10px;
+}
+.footer{
+	margin-left:10px;
+}
+.footer2{
+	margin-left:10px;margin-top:120px;
+}
+.footer3{
+	margin-left:130px;margin-top:5px;
+}
+.submit{
+	margin-left:10px;
+}
